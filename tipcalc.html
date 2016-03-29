@@ -1,0 +1,27 @@
+<!DOCTYPE html="en-US">
+<html>
+  <meta charset="utf-8">
+  <head>
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+  <script>
+    //vars
+    var billAmount = 0;
+    var output = "";
+    var tip = 0;
+    var tipRate = 0;
+
+    //input
+    billAmount = prompt("What is the bill amount?" , 10);
+    tipRate = prompt("What is the tip rate (as a percentage)?" , 15);
+
+    // processing
+    tip = billAmount * (tipRate / 100);
+    output = "Tip is $" + tip.toFixed(2);
+
+    //output
+    document.write(output)
+    </script>
+  </body>
+</html>
